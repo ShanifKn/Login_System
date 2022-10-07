@@ -1,0 +1,106 @@
+{{!-- <div class="d-flex align-items-center justify-content-center mt-5">
+  <section class="col-4">
+    <div
+      class="container mt-5 border solid shadow-lg p-3 mb-5 bg-white rounded"
+    >
+      <div class="row d-flex justify-content-center">
+        <h2 class="text-center fs-1">Login</h2>
+        <div class="col-md-9">
+
+          <form action="/login" method="post">
+            <div class="mb-3">
+              <label class="form-label fs-4">Email address</label>
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">We'll never share your email
+                with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fs-4">password</label>
+              <input
+                name="password"
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            {{#if statusBar}}
+              <span class="text-danger fw-bolder">Invalid Username and
+                Password!!</span>
+            {{/if}}
+
+            <div class="mb-3">
+              <a href="#" class="text-decoration-none">Create a new account ?</a>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </section></div> --}}
+
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          class="img-fluid"
+          alt="Sample image"
+        />
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form action="/login" method="post">
+          <h1 class="text-uppercase">Login</h1>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input
+              type="email"
+              id="form3Example3"
+              class="form-control form-control-lg"
+              placeholder="Enter a valid email address"
+              name="email"
+            />
+            <label class="form-label" for="form3Example3">Email address</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <input
+              type="password"
+              id="form3Example4"
+              class="form-control form-control-lg"
+              placeholder="Enter password"
+              name="password"
+            />
+            <label class="form-label" for="form3Example4">Password</label>
+          </div>
+          {{#if statusBar}}
+            <span class="text-danger fw-bolder">Invalid Username and Password!!</span>
+          {{/if}}
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;"
+            >Login</button>
+            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?
+              <a href="#!" class="link-danger">Register</a></p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <div
+    class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary"
+  >
+  </div>
+</section>
